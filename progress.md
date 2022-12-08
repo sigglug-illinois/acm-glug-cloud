@@ -24,4 +24,5 @@
 - Present: Sam, Russel, Nathan, Benjamin, Liam, Quan, Sun, Orbital
 - We added more harddrive details and serial numbers to the [inventory doc](https://docs.google.com/spreadsheets/d/1Mex7f6qN9uSypg3oOCucHvvdE0HO6KnUJdlAhtJ2QbY).
 - We successfully booted hydroegn (see the inventory doc) to a live image, but there is no network.
-- We think that the previous "waiting for iPXE" was due to using a PXE image, but the network was not up.
+  - We think that the previous "waiting for iPXE" was due to using a PXE image, but the network was not up.
+  - We established a serial connection with the network switch at the top of the rack. However, the switch prompts for a username and password. None of the obvious combinations work. We can either do a hard reset or consult engineering IT (maybe they manage it anyway).
