@@ -10,3 +10,7 @@
 - [ ] Do all servers have the same or compatible iDRAC version?
 - [ ] Advice on cable management and other physical things
   - What do we need to buy, if anything?
+- [ ] Research networking
+  - Do we need VLANs? How to set up?
+  - How to set up NAT?
+  - OPNsense vs pfSense vs pure iptables?
