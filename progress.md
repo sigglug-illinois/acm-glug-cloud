@@ -1,6 +1,6 @@
 # 2022-11-27
 
-- Present: Nathan, Quan, Sam, Evan. I am writing names, so if future readers have a question about this, they can ask one of the people present.
+- Present: Nathan, Quan, Sun, Sam, Evan. I am writing names, so if future readers have a question about this, they can ask one of the people present.
 - We found the second rack labelled ACM. Almsot all of the equipment on it is also labelled ACM.
 - We removed harddrives from their original machines, noting their original configuration.
 - We wrote a physical label on them.
@@ -21,7 +21,7 @@
 
 # 2022-12-07
 
-- Present: Sam, Russel, Nathan, Benjamin, Liam, Quan, Orbital
+- Present: Sam, Russel, Nathan, Benjamin, Liam, Quan, Sun, Orbital
 - We added more harddrive details and serial numbers to the [inventory doc](https://docs.google.com/spreadsheets/d/1Mex7f6qN9uSypg3oOCucHvvdE0HO6KnUJdlAhtJ2QbY).
 - We successfully booted hydroegn (see the inventory doc) to a live image, but there is no network.
 - We think that the previous "waiting for iPXE" was due to using a PXE image, but the network was not up.
