@@ -1,0 +1,9 @@
+- [ ] Inventory our devices.
+  - See [inventory](https://docs.google.com/spreadsheets/d/1Mex7f6qN9uSypg3oOCucHvvdE0HO6KnUJdlAhtJ2QbY).
+- [ ] Ensure Engineering IT's network whitelists the MAC addresses of our devices.
+- [ ] Install RockyLinux on the host, on one drive.
+- [ ] Test harddrives (partially complete).
+- [ ] Research Ceph, ZFS, and Ceph on ZFS.
+- [ ] Research OpenStack, Proxmox, and vSphere.
+  - Will they support cloud services like container-as-a-service and object storage?
+  - How hard are they to maintain?

@@ -10,7 +10,7 @@ We propose a ACM/GLUG cloud. The cloud would be built from donated and surplus m
   - The software configuration persists even as physical machines are added and removed.
 - The cluster will be administered by a committee volunteers who have final say on design decisions.
 - We will leverage open-source off-the-shelf software as much as possible.
-  - For example, [OpenStack](https://www.openstack.org/software/)
+  - [OpenStack](https://www.openstack.org/software/)
 - We will use a credit based system to encourage frugal but full use of the resources.
 
 ### Resource offering
