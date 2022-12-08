@@ -7,6 +7,8 @@
 - [ ] Research filesystems
   - Ceph on native vs Ceph on ZFS?
   - Can we use ZFS for root partition? Should we?
+  - This should be compatible with the performance limitations of our current NICs.
+  - They should be optimal for the storage controllers built in to the servers.
 - [ ] Research OpenStack, Proxmox, and vSphere.
   - Will they support cloud services like container-as-a-service and object storage?
   - How hard are they to maintain?
@@ -17,3 +19,7 @@
   - Do we need VLANs? How to set up?
   - How to set up NAT?
   - OPNsense vs pfSense vs pure iptables?
+- [ ] Research HDD capacity and speed
+  - What SSDs should we buy? How many? How big?
+  - Does the storage driver support mixed SSD and HDDs?
+  - Should there be a specialized storage vs compute node?
