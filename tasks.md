@@ -1,6 +1,6 @@
-- [ ] Inventory our devices.
+- [x] Inventory our devices.
   - See [inventory](https://docs.google.com/spreadsheets/d/1Mex7f6qN9uSypg3oOCucHvvdE0HO6KnUJdlAhtJ2QbY).
-- [ ] Ensure Engineering IT's network whitelists the MAC addresses of our devices.
+- [ ] Figure out how to add our devices to the University network.
 - [ ] Install RockyLinux on the host, on one drive.
 - [ ] Test harddrives (partially complete).
 - [ ] Research filesystems
