@@ -1,6 +1,7 @@
 - [x] Inventory our devices.
   - See [inventory](https://docs.google.com/spreadsheets/d/1Mex7f6qN9uSypg3oOCucHvvdE0HO6KnUJdlAhtJ2QbY).
 - [ ] Figure out how to add our devices to the University network.
+  - [ ] Find MAC address for managed switch?
 - [ ] Install RockyLinux on the host, on one drive.
 - [ ] Test harddrives (partially complete).
 - [ ] Research filesystems
