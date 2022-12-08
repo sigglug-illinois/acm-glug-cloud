@@ -7,3 +7,6 @@
 - [ ] Research OpenStack, Proxmox, and vSphere.
   - Will they support cloud services like container-as-a-service and object storage?
   - How hard are they to maintain?
+- [ ] Do all servers have the same or compatible iDRAC version?
+- [ ] Advice on cable management and other physical things
+  - What do we need to buy, if anything?

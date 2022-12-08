@@ -1,0 +1,4 @@
+- Physical KVM
+  - If we get all the iDRAC working, this may be less important.
+- Cable management stuff
+- Rack infrastructure?
