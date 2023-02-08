@@ -10,6 +10,7 @@
   - This should be compatible with the performance limitations of our current NICs.
   - They should be optimal for the storage controllers built in to the servers.
 - [ ] Research OpenStack, Proxmox, and vSphere.
+  - <https://www.reddit.com/r/Proxmox/comments/lca6cv/proxmox_vs_openstack/>
   - Will they support cloud services like container-as-a-service and object storage?
   - How hard are they to maintain?
 - [ ] Do all servers have the same or compatible iDRAC version?

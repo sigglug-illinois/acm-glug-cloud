@@ -15,41 +15,31 @@ We propose a ACM/GLUG cloud. The cloud would be built from donated and surplus m
 
 ### Resource offering
 
-Basic web applications can be supported through compute engine that manages user-defined VMs.
+Additionally, we may try to support the following higher-level software services:
 
-- We can run [yggdrasil](https://github.com/acm-uiuc/yggdrasil) (ACM auth and user-service) in docker-compose on a VM.
-  - Likewise, the resume book application.
-- We can offer IRC bouncers by giving individual users a VM.
-- We can offer GPU training by giving SIGs a VM scheduled on a node with GPU access.
-
-However, future applications should be written at a higher level using platform-as-a-service or function-as-a-service. This allows us to consolidate common services. Instead of each application having their own database, we could deploy one shared distributed RDBMS instance, and give users different views on that database. This saves compute overhead, and also deduplicates maintenance effort.
-
-Likewise, scheduling each user's GPU training in its own VM leads to scheduling overhead and inefficient sharing of resources. Instead, we could use a job scheduler like SLURM.
-
-Therefore, we will offer IaaS VMs first, while we build out more specialized services as needed later.
-
-- Compute engine (aka IaaS)
-  - This is the most general but least optimized compute platform.
-  - We could offer each user a small VM to use as a sandbox.
-  - OpenStack Nova implements a compute engine.
-- Function-as-a-service (aka FaaS or serverless compute)
-  - This is useful for HTTP web applications and microservices.
-  - We would offer a FaaS service for predefined languages and environments.
-- Relational database (aka SQL)
-  - This is useful for web applications to store structured data (yggdrasil uses Postgres).
-  - OpenStack Nova implements a compute engine.
-  - We would probably manage an instance of Postgres by hand. OpenStack Trove implements a database provisioner, should we want to allow users to create their own databases.
-- Object store (aka S3)
-  - This is useful for web applications to store unstructured data.
-  - We could host a Nix binary cache. This would accelerate ACM projects that use Nix to install dependencies.
-  - OpenStack Swift implements an object store.
-- Batch job scheduler
-  - This is for offline transaction processing, including GPU-accelerated training.
-  - SLURM implements a batch job scheduler with GPU capability.
-- Virtual desktops
-  - This provides a Linux desktop environment for those who do not have access to a Linux machine. Most of the time, we would prefer users use a VM, but for graphical applications, users can provision a desktop environment.
-- CI/CD runner
-  - GitHub CI has a limited free tier, but they allow users to host their own runner to run the CI/CD workflow. We can host some low-priority VMs these for our users.
+  - Virutal machine compute engine
+  - Container/kubernetes cluster
+  - Function-as-a-service (aka serverless compute)
+  - Relational database
+  - Public access (or member only) UNIX server, like SDF server or hashbang.sh
+  - Object storage (aka S3)
+  - IRC bouncer
+  - RDP access to virtual Linux desktops
+  - Batch job scheduler for offline transaction processing (including GPU resources)
+  - https://charm.sh/
+  - Nix/Bazel/CCache build farm
+  - Static site hosting
+    - Host GNULUG
+    - Host member webspaces
+    - Host mirrors
+  - Dynamic site hosting
+    - [yggdrasil](https://github.com/acm-uiuc/yggdrasil)
+    - Member webspaces
+    - Other ACM infra webapps
+  - VCS hosting (GitLab, sourcehut)
+  - GitLab/GitHub CI workers
+    - Make sure we don't duplicate the universities offering here
+  - Host Matrix or RocketChat
 
 Services tentatively not offered:
 
