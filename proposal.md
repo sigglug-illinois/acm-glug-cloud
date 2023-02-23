@@ -64,7 +64,14 @@ Users could interface to our cloud in two ways:
 1. Through a web portal, which is easiest to get started.
   - [OpenStack Horizon](https://www.openstack.org/software/releases/yoga/components/horizon) implements a web UI.
 2. Through a third-party deployment tool that can deploy a cloud architecture on multiple clouds, so the user's configuration would not be vendor-locked to the ACM/GLUG cloud.
-  - For example [Terraform](https://terraform.io) or [CloudFoundry](https://www.cloudfoundry.org/), support AWS, GCP, Azure, and OpenStack.
+  - For example [Terraform](https://terraform.io) or [CloudFoundry](https://www.cloudfoundry.org/), support AWS, GCP, Azure, and OpenStacks.
+
+### Networking
+Networing neccessarily entails dealing with Engineering IT to some degree for a full solution. The main challenge, however, is that of incoming connections. It is obviously desireable to allow incoming connections, such as to host a website that is accessible from anywhere as a website is expected to be. However, Engineering IT does not at present permit incoming connections. There are a few ways to address this issue:
+
+1. Request a that the UIUC/Illinois Firewall simply does not filter incoming connections to us, and then we do it ourself. It would likely be very difficult to convince them that we are able to setup a secure SSH server since there are very high-level orders to not permit incoming conections, in particular SSH connections. 
+2. Use [Cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) as a way of bypassing NAT. Cloudflare tunnels run a daemon on our servers that opens multiple redundant conectionks to Cloudflare's datacenters, then Cloudflare's network accepts incoming connections on our behalf and forwards them. This product is specifically designed to deal with firewalls such as that of UIUC. The free version can tunnel several protocols, including HTTP, HTTPS, and SSH. This gives the advantage that websites or other HTTP services taht we host are completely freely accessible without specifical client configuration. SSH does require some client configuration if we do not use the premium version of Cloudflare tunnels. A sponsorship *may* be possible to get this premium version for free as a sponsorship, however they generally prefer to sponsor groups with a different profile from ours (major FOSS projects and groups that suffer from censorship).
+3. Rent a VPS (such as OVH, or DigitalOcean; many providers exist) and use it in essentially the same way as Cloudflare Tunnels. Options to do this on the software end include SSH tunnels (open SSH connection from our cloud to the VPS with -R), GRE tunnels, or mesh networking (e.g., Slack's Nebula). It would be preferable to use a VPS provider with a good network and unlimited bandwith for this, so OVH is a good option. DigitalOcean, however, offers free student credit. We can use [Nebula](https://github.com/slackhq/nebula) for virtual intranet.
   
 We would host a static documentation site explaining the resources, limitations, and frequently asked questions.
 
