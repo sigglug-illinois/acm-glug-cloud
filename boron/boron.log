@@ -1,0 +1,27 @@
+Hostname: boron
+Model: Dell PowerEdge 6950
+
+2023.03.07 (Quan Hao - ACM Back Room)
+- The memory slots are labelled DIMMXX where XX runs from 1-16 (4 per CPU)
+
+- Initially E2011 Mem Config Err. No boot, nothing seen on screen
+- Mem was laid out as such: (14x 2GB DDR RAM sticks)
+- All slots filled except 1 and 2
+
+- Took out all memory and reinstalled them as such:
+- 1,2 & 5,6 & 9,10 & 13,14 (8 sticks used)
+- This layout is according to the hardware manual and is one of the possible allowed configurations
+- System now boots to screen
+- System warns that DIMM 5 & 6 are faulty
+- E2110 MBE DIMM 5 & 6 
+
+- Reinstalled the 6 remaining sticks, with overall looking as such:
+- All slots filled except 7,8
+- Failed to boot, E2010 No Memory
+- All slots filled except 5,6
+- Failed to boot, E2010 No Memory
+
+- Only config that boots is the one previously tried
+- 1,2 / 5,6 / 9,10 / 13,14 (8 sticks used)
+
+- Ran a bunch of hardware diagnostics. Find log files in the same directory.
