@@ -1,0 +1,18 @@
+Dell PowerEdge R520
+Hostname: Helium
+Troubleshooting Log
+Thursday March 2, 2023
+
+System messages when booting:
+
+ * Alert! Dell iDRAC not responding.
+
+ * Configuring Memory...Done
+
+ * Initializing iDRAC...
+
+BIOS is at 2.1.2
+
+Able to configure certain items within the BIOS settings. However, there will be an alert that comes up when saving that would indicate that no settings were saved. In my experience however, the few settings that I changed (basically whether to boot into BIOS or UEFI mode) were retained.
+
+Although the Dell Baseboard Management Controller is indicated to be disabled, the boot process takes exceptionally long (two to three minutes). This is assumedly because the system firmware is trying to intialize the iDRAC when there is no iDRAC installed. It is stranger still that an external card would be required for the iDRAC, but there is very obviously a labeled slot on the motherboard.
