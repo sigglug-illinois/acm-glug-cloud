@@ -48,3 +48,7 @@
 - Nathan and Sam confirmed that Matt has access to the switch in question and the related ACM networks. We would like to disable MAC filtering on the ports, since the ports are behind a swipe-access door with few people allowed access. However, we don't know how to do that in IRIS.
 
 - https://answers.uillinois.edu/illinois/48169
+
+# 2023-04-21
+
+- Nathan, Sam, Daniel, and Quan reinstalled Lithium. We changed the RAID configuration and installed Rocky Linux.

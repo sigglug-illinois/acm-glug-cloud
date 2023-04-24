@@ -1,0 +1,44 @@
+- Add server to inventory list.
+- Install RAM.
+  - Note if the motherboard requires error-correcting (EEC) RAM or a specific kind of DDR.
+  - Use approximately 2Gb per CPU.
+- Install drives.
+  - Prefer drives that have been tested with SMART, if they are available.
+  - State that these drives are used in this machine in the inventory list.
+- Install into server rack.
+- Plug in a mouse, keyboard, and screen.
+- Turn off RAID card in BIOS. Hardware RAID requires a priorietary chip that can be difficult to procure if the chip fails. We prefer software RAID.
+  - If RAID is unable to be turned off, we created as many virtual disks as physical disks.
+    - During the boot sequence immediately following the Dell logo appearing, hit Ctrl+R.
+    - Select the VD Mgmt screen
+    - For each physical disk:
+      - Highlight the RAID Card (e.g., PERC H700)
+      - Press F2
+      - Create new virtual disk
+      - Use RAID 0, because we want to passthrough as directly as possible to the OS
+      - Select that physical disk.
+      - Leave everything to their defaults
+- Download the "Boot" image of https://rockylinux.org/download for your arch (probably x86_64). We decided to use RockyLinux because RHEL has gooood documentation and resources.
+  - On package selection screen:
+    - Minimal install with Standard, Headless Management, and System Tools package groups.
+  - On network screen:
+    - Enable network.
+    - Set the hostname to <model number keyword>-<human-readable>.
+    - Print a physical laber for the server with the label maker.
+    - Plug in an ethernet cable to top-of-rack switch.
+    - Make sure the port is enabled in IRIS. It should be already.
+  - On Time and Date screen:
+    - Select Chicago.
+    - Enable NTP.
+      - Use ntp.illinois.edu.
+  - On installation destination:
+    - Select the first virtual disk (sda).
+    - Set "Storage Configuration" to custom,
+    - Click "Done" to edit partitions.
+    - Make the following partitions:
+      - 300Mib EFI System Parition /boot/efi (Standard Partition).
+      - 100Gib xfs partition for / (Standard Partition).
+      - Set swap partition (Standard Partition).
+      - Rule of thumb, set swap equal to the amount of RAM.
+  - On password screen:
+    - Set the Root Password to a passphrase
