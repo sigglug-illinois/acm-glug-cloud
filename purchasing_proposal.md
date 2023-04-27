@@ -21,7 +21,7 @@ In other words, this items might be submitted, but a decision hasn't been made y
 | 10Gb network switch          |            |                                    |                                                                                                |
 | 10Gb NICs & cabling          |            |                                    |                                                                                                |
 | Disk storage (HDDs or SSDs) |            |                                    |                                                                                                |
-| DVD to SATA adapters        | $17.03     | Boot disks for servers             | [Amazon](https://www.amazon.com/12-7mm-Universal-Aluminum-CD-ROM-Optical/dp/B09J56NP4S/) |
+| DVD to SATA adapters        | $17.03     | Boot disks for servers             | [Amazon](https://www.amazon.com/12-7mm-Universal-Aluminum-CD-ROM-Optical/dp/B09J56NP4S/) [ebay](https://www.ebay.com/itm/134367151192?chn=ps&mkevt=1&mkcid=28&srsltid=AfAwrE64_cvakGYsjQHQPXZZMYNpuejfg7VKyFXMoJxNHr6HZeFGhc3kHsM) |
 
 ##### Other
 - Physical KVM or really something to facilitate remote OOB management
