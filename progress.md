@@ -52,3 +52,7 @@
 # 2023-04-21
 
 - Nathan, Sam, Daniel, and Quan reinstalled Lithium. We changed the RAID configuration and installed Rocky Linux.
+
+# 2023-04-27
+
+- This happened over the past weekish: Abe, David, Ethan, and Pomona decided to use Hydrogen as the main storage server, so we grabbed the eight largest drives (six 4TB and two 3TB) and stuck 'em in the slots. To power a boot disk, we spliced the optical drive power cable to create an SSD power cable. We wanted to use BTRFS because it can deal with a RAID array over drives of different sizes, but Rocky does not support BTRFS, so we installed Debian. I think SLURM should work fine across Debian and Rocky; on the other servers we don't need large amounts of storage, so we don't need BTRFS, so we can stick with Rocky. Then we worked with the iDRAC issues on Helium -- we tried and failed to update the firmware, so we've concluded it's basically a lost cause. Apparently fatal iDRAC issues are a common cause of death in Dell servers. RIP.
