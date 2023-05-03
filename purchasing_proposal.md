@@ -5,7 +5,7 @@ In other words, this should be submitted to the ACM Executive Board for approval
 
 | Item                        | Unit price | Justification/Intended use         | Purchasing link                                                                                |
 |-----------------------------|------------|------------------------------------|------------------------------------------------------------------------------------------------|
-| DVD to SATA adapters        | $6.81      | Boot disks for servers             | [eBay](https://www.ebay.com/itm/134367151192?chn=ps&mkevt=1&mkcid=28&srsltid=AfAwrE64_cvakGYsjQHQPXZZMYNpuejfg7VKyFXMoJxNHr6HZeFGhc3kHsM ) |
+| DVD to SATA adapters (5)    | $6.81      | Boot disks for servers             | [eBay](https://www.ebay.com/itm/134367151192?chn=ps&mkevt=1&mkcid=28&srsltid=AfAwrE64_cvakGYsjQHQPXZZMYNpuejfg7VKyFXMoJxNHr6HZeFGhc3kHsM ) |
 
 #### Items for consideration
 In other words, this items might be submitted, but a decision hasn't been made yet.
