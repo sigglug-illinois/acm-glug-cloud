@@ -3,11 +3,8 @@
 #### Items for submission
 In other words, this should be submitted to the ACM Executive Board for approval.
 
-| Item            | Total price = unit price * quantity | Justification/Intended use                        | Purchasing link                                                                            | Approved?|
-|-----------------|-------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------|---|
-| Screwdriver set | $16                                 | Minor repairs, hardware installation modification | [Amazon](https://smile.amazon.com/dp/B08DRB1DFJ)                                           ||
-| Velcro ties     | $16                                 | Organization                                      | [Amazon](https://smile.amazon.com/gp/product/B08TTPX4KB)                                   ||
-| Label maker w' tape         | $38        | Inventorying out- and in-use items | [Amazon](https://smile.amazon.com/DYMO-LetraTag-Handheld-Labeling-1955663/dp/B01BD6DRI6)       |
+| Item                        | Unit price | Justification/Intended use         | Purchasing link                                                                                |
+| DVD to SATA adapters        | $6.81      | Boot disks for servers             | [eBay](https://www.ebay.com/itm/134367151192?chn=ps&mkevt=1&mkcid=28&srsltid=AfAwrE64_cvakGYsjQHQPXZZMYNpuejfg7VKyFXMoJxNHr6HZeFGhc3kHsM ) |
 
 #### Items for consideration
 In other words, this items might be submitted, but a decision hasn't been made yet.
@@ -21,7 +18,7 @@ In other words, this items might be submitted, but a decision hasn't been made y
 | 10Gb network switch          |            |                                    |                                                                                                |
 | 10Gb NICs & cabling          |            |                                    |                                                                                                |
 | Disk storage (HDDs or SSDs) |            |                                    |                                                                                                |
-| DVD to SATA adapters        | $6.81      | Boot disks for servers             | [eBay](https://www.ebay.com/itm/134367151192?chn=ps&mkevt=1&mkcid=28&srsltid=AfAwrE64_cvakGYsjQHQPXZZMYNpuejfg7VKyFXMoJxNHr6HZeFGhc3kHsM ) |
+
 
 ##### Other
 - Physical KVM or really something to facilitate remote OOB management
