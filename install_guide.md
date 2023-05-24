@@ -41,4 +41,12 @@
       - Set swap partition (Standard Partition).
       - Rule of thumb, set swap equal to the amount of RAM.
   - On password screen:
-    - Set the Root Password to a passphrase
+    - Set the Root Password to a short passphrase.
+- Restart the server.
+- Use IRIS to find the IP.
+- Test SSH as root with root password.
+  - For each manually-managed user:
+    - Ask for ther desired username and SSH key. This user will not need a password. SSH key to log in is better security than a password, and there is little extra security added to having a password for `sudo` (the attacker would also need to have your SSH private key).
+    - From a root shell, `useradd --groups wheel $user && su $user -c "mkdir ~/.ssh && chmod 700 ~/.ssh && echo $key > ~/.ssh/authorized_keys && chmod 640 ~/.ssh/authorized_keys"`
+    - Test that the user can log in, run `passwd`, and test `sudo -i`.
+    - Eventually we will have some unified system (LDAP?) of adding users to all the hosts with the same SSH keys.
