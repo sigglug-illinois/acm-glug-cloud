@@ -11,6 +11,7 @@ Tasks, mostly in order of priority
   - Can we use ZFS for root partition? Should we?
   - This should be compatible with the performance limitations of our current NICs.
   - They should be optimal for the storage controllers built in to the servers.
+- [ ] move inventory list out of Google Drive.
 - Applications:
   - [ ] IRC bouncer
   - [ ] Public access UNIX server
