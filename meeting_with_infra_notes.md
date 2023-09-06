@@ -1,3 +1,9 @@
+# Meeting, Wednesday September 9, 2023
+* Participants:
+  * Sam Grayson
+  * Tren Hao
+  * Nathan Somers
+  * Jake Levine
 * What names should we settle on?
   * GLUG/Infra cluster
 * Purpose and offerings of the other cluster and of our cluster?
