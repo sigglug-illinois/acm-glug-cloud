@@ -19,6 +19,7 @@
       * Revise task list
         * Emphasize doing container engine first
     * How we're going to do it
+      * Make them all have the same distro
       * Find candidate HTTP/HTTPS service, ask Engr IT to open external port for that service
       * Deploy persistent storage for k8s
       * Deploy k8s
